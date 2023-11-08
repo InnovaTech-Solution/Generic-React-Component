@@ -2,35 +2,43 @@
 
 ## Installation
 
-Pour démarrer ce projet, assurez-vous d'avoir Node.js installé sur votre machine. Ensuite, suivez ces étapes :
+To start this project, make sure you have Node.js installed on your machine. Then, follow these steps:
 
-1. Clonez ce dépôt sur votre machine.
+Clone this repository to your machine.
 
-2. Accédez au répertoire du projet.
+Navigate to the project directory.
 
-3. Installez les dépendances avec npm.
+Install the dependencies using npm.
 
 ```
 npm install
 ``````
 
-## Démarrage
+## Getting Started
 
-Une fois les dépendances installées, vous pouvez lancer l'application en utilisant la commande suivante :
+Once the dependencies are installed, you can launch the application using the following command:
 
 ```
 npm start
 ```
 
-
-L'application sera accessible à l'adresse [http://localhost:3000](http://localhost:3000) dans votre navigateur.
+The application will be accessible at [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Login Form
 
-### Partie connexion
+### Login Section
 ![Login Form](./Assets/LoginForm.png)
 
-### Partie inscription
+### Registration Section
 ![Login Form](./Assets/LoginFormInscription.png)
 
-path : [URL où voir le Login Form](http://localhost:3000/login1)
+path : [URL to view the Login Form](http://localhost:3000/login1)
+
+# Contact
+For any inquiries or assistance, please don't hesitate to contact us. You can reach us at the following email address:
+
+Email: contact@innovatech-solution.fr
+
+Language: We are proficient in both French and English.
+
+Please feel free to contact us in either language that you are comfortable with.
