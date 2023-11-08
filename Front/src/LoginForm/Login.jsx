@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {Box, Container, TextField, Button, InputAdornment} from "@mui/material";
+import React, { useState } from 'react';
+import { Box, Container, TextField, Button, InputAdornment } from "@mui/material";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
@@ -15,6 +15,7 @@ export default function Login() {
     const togglePasswordVisibility = () => {
         setShowPassword(!showPassword);
     };
+
     return (
         <Box
             sx={{
@@ -65,9 +66,13 @@ export default function Login() {
                         alignContent: 'center',
                     }}
                 >
-                    <h1 style={{marginBottom: '5rem', fontSize: '2rem'}}>
+                    <h1 style={{
+                        marginBottom: showRegistration ? '2rem' : '5rem',
+                        fontSize: '2rem'
+                    }}>
                         {showRegistration ? 'Inscription' : 'Connexion'}
                     </h1>
+
                     <Box
                         component="form"
                         sx={{
@@ -84,11 +89,11 @@ export default function Login() {
                                     marginBottom: '1rem',
                                     justifyContent: 'center',
                                 }}
-                                label="Nom d'association"
+                                label="Adresse-mail"
                                 InputProps={{
                                     endAdornment: (
                                         <InputAdornment position="end">
-                                            <AccountCircleIcon/>
+                                            <AccountCircleIcon />
                                         </InputAdornment>
                                     ),
                                 }}
@@ -103,7 +108,7 @@ export default function Login() {
                             InputProps={{
                                 endAdornment: (
                                     <InputAdornment position="end">
-                                        <AccountCircleIcon/>
+                                        <AccountCircleIcon />
                                     </InputAdornment>
                                 ),
                             }}
@@ -131,12 +136,12 @@ export default function Login() {
                                 ),
                             }}
                         />
-                        <Button variant="contained" type="submit" sx={{width: '20vh'}}>
+                        <Button variant="contained" type="submit" sx={{ width: '20vh' }}>
                             {showRegistration ? 'S\'enregistrer' : 'Se connecter'}
                         </Button>
                         <Button
                             variant="text"
-                            sx={{marginTop: '1rem'}}
+                            sx={{ marginTop: '1rem' }}
                             onClick={toggleRegistration}
                         >
                             {showRegistration
@@ -149,3 +154,4 @@ export default function Login() {
         </Box>
     );
 }
+

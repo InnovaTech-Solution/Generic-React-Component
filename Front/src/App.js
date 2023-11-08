@@ -5,7 +5,7 @@ import {ThemeProvider, CssBaseline} from "@mui/material";
 import Login from "./LoginForm/Login";
 
 function App() {
-    const [theme, colorMode] = useMode();
+    const [theme] = useMode();
     return (
         <ColorModeContext.Provider value={useMode()}>
             <ThemeProvider theme={theme}>
