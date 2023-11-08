@@ -4,7 +4,7 @@
 
 To start this project, make sure you have Node.js installed on your machine. Then, follow these steps:
 
-Clone this repository to your machine.
+Clone this repository to your computer.
 
 Navigate to the project directory.
 
